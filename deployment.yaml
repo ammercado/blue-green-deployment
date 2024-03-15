@@ -43,9 +43,9 @@ spec:
     spec:
       containers:
       - name: rollouts-demo
-#         image: argoproj/rollouts-demo:blue
-#         image: argoproj/rollouts-demo:green
-        image: argoproj/rollouts-demo:yellow
+#         image: stacksimplify/kubenginx:1.0.0
+#         image: stacksimplify/kubenginx:2.0.0
+        image: stacksimplify/kubenginx:1.0.0
         imagePullPolicy: Always
         resources:
           requests:
@@ -55,7 +55,7 @@ spec:
             cpu: "200m"
             memory: "256Mi"
         ports:
-        - containerPort: 8080
+        - containerPort: 80
   strategy:
     blueGreen: 
       activeService: rollout-bluegreen-active 
