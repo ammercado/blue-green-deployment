@@ -43,9 +43,9 @@ spec:
     spec:
       containers:
       - name: rollouts-demo
-#         image: stacksimplify/kubenginx:1.0.0
-#         image: stacksimplify/kubenginx:2.0.0
-        image: stacksimplify/kube-helloworld:1.0.0
+#         image: argoproj/rollouts-demo:blue
+#         image: argoproj/rollouts-demo:green
+        image: argoproj/rollouts-demo:yellow
         imagePullPolicy: Always
         resources:
           requests:
